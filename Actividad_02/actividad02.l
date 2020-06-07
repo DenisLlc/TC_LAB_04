@@ -1,16 +1,12 @@
 /* seccion de definiciones */
-DIGITO [0-9]
-NUMERO {DIGITO}+
 %{
-    int numero1 = 0;
-    void multiploTres();
+
 %}
 /* seccion de reglas*/
 %%
-            {printf("Primera expresion regular \n");}
-            {printf("Segunda expresion regular \n");}
-            {printf("Tercera expresion regular \n");}
-[\n]            {printf("Cuarta expresion regular \n");}
+(0|3|6|9)+                                            {printf("Primera expresion regular \n");}
+((0|3|6|9)*(1|4|7)(0|3|6|9)*((2|5|8)|(1|4|7){2}))+    {printf("Segunda expresion regular \n");}
+((0|3|6|9)*(2|5|8)(0|3|6|9)*((1|4|7)|(2|5|8){2}))+    {printf("Tercera expresion regular \n");}
 .         {printf("No se reconoce");}
 %%
 /* seccion de codigo de usuario*/
