@@ -363,7 +363,7 @@ struct yy_trans_info
 static const flex_int16_t yy_accept[18] =
     {   0,
         0,    0,    4,    2,    3,    2,    2,    2,    2,    0,
-        0,    0,    0,    0,    0,    1,    0
+        0,    0,    1,    0,    0,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =

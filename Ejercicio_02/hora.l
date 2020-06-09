@@ -8,7 +8,7 @@ SEP [\:]
 %}
 /*seccion de reglas*/
 %%
-{HOR}{SEP}{MIN}{SEP}{SEG}     {printf("Expresion reconocida\n");}
+{HOR}:{MIN}(:{SEG})?     {printf("Expresion reconocida\n");}
 .           {printf("No se reconoce\n");}
 %%
 /*seccionde codigo de usuario*/
