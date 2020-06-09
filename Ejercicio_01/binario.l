@@ -5,7 +5,7 @@ BIN [0-1]
 %}
 /*seccion de reglas*/
 %%
-{BIN}*0     {printf("Es un numero binario\n");}
+(0|1)*0     {printf("Es un numero binario\n");}
 .           {printf("No se reconoce\n");}
 %%
 /*seccionde codigo de usuario*/
